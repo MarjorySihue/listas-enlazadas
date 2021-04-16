@@ -58,7 +58,7 @@ public class LinkedList {
         inicio = null;
     }
     
-    // Método para 
-    
-    
+    // método para editar un nodo en específico
+    // método para eliminar un nodo en específico
+    // método para saber la el total de nodos
 }

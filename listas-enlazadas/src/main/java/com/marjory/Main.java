@@ -18,21 +18,20 @@ public class Main {
         LinkedList lista = new LinkedList();
         int option;
         System.out.println("Mostrar Lista Vacia: ");
-        lista.mostrarLista();                
+        lista.mostrarLista();
         System.out.println("-----");
-        
+
         //Agregando info
-        lista.agregarDatoFinal(0);
-        lista.agregarDatoFinal(10);
-        lista.agregarDatoFinal(19);
-        
-        System.out.println("borrar lista: ");
-        lista.borrarLista();
-        
-        System.out.println("Mostrar Lista con elementos agregados:");
+        System.out.println("datos inicio");
+        lista.agregarDatoInicio(8);
+        lista.agregarDatoInicio(25);
         lista.mostrarLista();
         System.out.println("");
-        System.out.println("-----");
+        System.out.println("dato final");
+        lista.agregarDatoFinal(1);
+        lista.agregarDatoFinal(10);
+        lista.agregarDatoFinal(19);
+        lista.mostrarLista();
 
     }
 }
