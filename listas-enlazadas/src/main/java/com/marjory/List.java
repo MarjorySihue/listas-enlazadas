@@ -111,11 +111,23 @@ public class List {
     // método para editar un nodo en específico
     public void editarNodoPorPosicion(int posicion, int valor) {
 
+        /**
+         * 1.preguntar si la posicion existe 
+         * 2.Si existe, preguntar si es la posicion 0 y actualizar con el nuevo valor. 
+         * 3.Si no lo fuera, recorrer lista hasta la posicion correcta y actualizar con nuevo valor.
+         */
     }
 
     // método para eliminar nodo en especifico
-    public void eliminarNodoPorPosicion(int posicion, int nuevoValor) {
-
+    public void eliminarNodoPorPosicion(int posicion) {
+        /**
+         * 1.preguntar si la posicion existe 
+         * 2.si existe preguntar si es la posicion 0/inicio, creo una lista temporal que apunte al 
+         * segundo nodo(1)y este vuelva el nuevo primer nodo(0).
+         * 3.El anterior nodo(0) se apunta a null y pierde referencia.
+         * 4.Se actualiza la nueva lista.
+         * 5. Si fuera otra posición, no sé como explicar (LOL).
+         */
     }
 
     private void mensaje() {
