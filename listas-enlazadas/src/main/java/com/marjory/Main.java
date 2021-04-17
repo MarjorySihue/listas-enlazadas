@@ -15,22 +15,25 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        LinkedList lista = new LinkedList();
-        int option;
-        System.out.println("Mostrar Lista Vacia: ");
-        lista.mostrarLista();
-        System.out.println("-----");
+        List lista = new List();
 
         //Agregando info
-        System.out.println("datos inicio");
-        lista.agregarDatoInicio(8);
-        lista.agregarDatoInicio(25);
+        System.out.println("datos agregados al inicio");
+        lista.agregarNodoInicio(23);
+        lista.agregarNodoInicio(25);
+        lista.agregarNodoInicio(17);
         lista.mostrarLista();
         System.out.println("");
-        System.out.println("dato final");
-        lista.agregarDatoFinal(1);
-        lista.agregarDatoFinal(10);
-        lista.agregarDatoFinal(19);
+        System.out.println("datos agregados al final");
+        lista.agregarNodoFinal(2);
+        lista.agregarNodoFinal(10);
+        lista.agregarNodoFinal(13);
+        lista.mostrarLista();
+        System.out.println("");
+        lista.mostrarTotalNodos();
+        System.out.println("");
+        lista.posicionNodo(10);
+        lista.editarNodoPorPosicion(1, 50);
         lista.mostrarLista();
 
     }

@@ -10,18 +10,25 @@ package com.marjory;
  * @author Marjory
  */
 public class Nodo { // partes: dato/info y enlace/siguiente
+
     public int dato; //dato
     public Nodo siguiente; //enlace
-    
-    // constructor para insertar al final
-    public Nodo(int d){
+
+    public Nodo(int d) {
         this.dato = d;
         this.siguiente = null;
     }
-    
-    // constructor para insertar al inicio
-    public Nodo(int d, Nodo n){
+
+    public Nodo(int d, Nodo n) {
         dato = d;
         siguiente = n;
+    }
+
+    public int getDato() {
+        return dato;
+    }
+
+    public void setDato(int dato) {
+        this.dato = dato;
     }
 }
