@@ -9,26 +9,34 @@ package com.marjory;
  *
  * @author Marjory
  */
-public class Nodo { // partes: dato/info y enlace/siguiente
+public class Nodo<T> { // partes: dato/info y enlace/siguiente
 
-    public int dato; //dato
-    public Nodo siguiente; //enlace
+    private T dato; //dato
+    private Nodo siguiente; //enlace
 
-    public Nodo(int d) {
+    public Nodo(T d) {
         this.dato = d;
         this.siguiente = null;
     }
 
-    public Nodo(int d, Nodo n) {
-        dato = d;
-        siguiente = n;
-    }
-
-    public int getDato() {
+    public T getDato() {
         return dato;
     }
+    
+    public void enlazar(Nodo nodo){
+        siguiente = nodo;
+    }
+    
+    public Nodo getSiguiente(){
+        return siguiente;
+    }
+    
+    public void print(){
+        System.out.println("(" + dato + ")-->" + siguiente);
+    }
 
-    public void setDato(int dato) {
-        this.dato = dato;
+    @Override
+    public String toString() {
+        return "(" + dato + ")";
     }
 }

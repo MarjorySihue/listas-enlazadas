@@ -15,26 +15,26 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List lista = new List();
+        ListaEnlazada lista = new ListaEnlazada();
 
         //Agregando info
         System.out.println("datos agregados al inicio");
-        lista.agregarNodoInicio(23);
-        lista.agregarNodoInicio(25);
-        lista.agregarNodoInicio(17);
-        lista.mostrarLista();
+//        lista.agregarNodoInicio(23);
+//        lista.agregarNodoInicio(25);
+//        lista.agregarNodoInicio(17);
+        lista.print();
         System.out.println("");
         System.out.println("datos agregados al final");
-        lista.agregarNodoFinal(2);
-        lista.agregarNodoFinal(10);
-        lista.agregarNodoFinal(13);
-        lista.mostrarLista();
+        lista.add(2);
+        lista.add(10);
+        lista.add(13);
+        lista.print();
         System.out.println("");
-        lista.mostrarTotalNodos();
+        lista.print();
         System.out.println("");
         lista.posicionNodo(10);
         lista.editarNodoPorPosicion(1, 50);
-        lista.mostrarLista();
+        lista.print();
 
     }
 }
